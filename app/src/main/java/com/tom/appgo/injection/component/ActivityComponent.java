@@ -6,6 +6,7 @@ import android.content.Context;
 import com.tom.appgo.injection.ContextLife;
 import com.tom.appgo.injection.PerActivity;
 import com.tom.appgo.injection.module.ActivityModule;
+import com.tom.appgo.module.main.MainActivity;
 
 import dagger.Component;
 
@@ -15,6 +16,8 @@ import dagger.Component;
 @PerActivity
 @Component(dependencies = AppComponent.class, modules = ActivityModule.class)
 public interface ActivityComponent {
+
+    void inject(MainActivity mainActivity);
 
     @ContextLife("Activity")
     Context getActivityContext();

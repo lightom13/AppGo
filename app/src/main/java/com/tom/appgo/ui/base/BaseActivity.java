@@ -20,10 +20,15 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
 
-        mActivityComponent = DaggerActivityComponent.builder()
-                .activityModule(new ActivityModule(this))
-                .appComponent(((BaseApplication) getApplication()).getAppComponent())
-                .build();
+    public ActivityComponent getActivityComponent() {
+        if (mActivityComponent == null) {
+            mActivityComponent = DaggerActivityComponent.builder()
+                    .activityModule(new ActivityModule(this))
+                    .appComponent(((BaseApplication) getApplication()).getAppComponent())
+                    .build();
+        }
+        return mActivityComponent;
     }
 }
