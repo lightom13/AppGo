@@ -1,4 +1,4 @@
-package com.tom.appgo.base;
+package com.tom.appgo.ui.base;
 
 /**
  * Base class that implements the Presenter interface and provides a base implementation for
