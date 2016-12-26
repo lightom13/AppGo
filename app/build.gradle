@@ -9,7 +9,7 @@ buildscript {
 }
 
 apply plugin: 'com.android.application'
-//dagger2
+//dagger2 butterknife
 apply plugin: 'com.neenbedankt.android-apt'// 注释处理
 
 android {
@@ -51,4 +51,7 @@ dependencies {
     compile 'com.google.dagger:dagger:2.0.2'
     apt 'com.google.dagger:dagger-compiler:2.0.2'
     compile 'javax.annotation:jsr250-api:1.0'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
 }
