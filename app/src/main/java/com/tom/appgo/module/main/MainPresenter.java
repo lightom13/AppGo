@@ -11,7 +11,6 @@ class MainPresenter extends BasePresenter<MainMvpView> {
 
     @Inject
     MainPresenter() {
-
     }
 
     void clickFab() {
