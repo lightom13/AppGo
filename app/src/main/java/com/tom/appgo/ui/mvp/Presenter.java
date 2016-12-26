@@ -1,4 +1,4 @@
-package com.tom.appgo.ui.base;
+package com.tom.appgo.ui.mvp;
 
 /**
  * Every presenter in the app must either implement this interface or extend BasePresenter

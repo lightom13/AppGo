@@ -1,6 +1,6 @@
 package com.tom.appgo.module.main;
 
-import com.tom.appgo.ui.base.BasePresenter;
+import com.tom.appgo.ui.mvp.BasePresenter;
 
 import javax.inject.Inject;
 
