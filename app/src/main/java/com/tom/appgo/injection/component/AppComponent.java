@@ -6,6 +6,7 @@ package com.tom.appgo.injection.component;
 
 import android.content.Context;
 
+import com.tom.appgo.data.DataManager;
 import com.tom.appgo.injection.ContextLife;
 import com.tom.appgo.injection.module.AppModule;
 
@@ -18,4 +19,6 @@ import dagger.Component;
 public interface AppComponent {
     @ContextLife("Application")
     Context getContext();
+
+    DataManager dataManager();
 }
